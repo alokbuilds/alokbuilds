@@ -1,0 +1,50 @@
+.policy-section{
+
+    padding:80px 8%;
+
+    background:#0f172a;
+
+}
+
+
+.policy-section{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+
+.policy-section h2{
+
+    color:#06b6d4;
+
+    margin-bottom:20px;
+
+}
+
+
+.policy-section p{
+
+    color:#cbd5e1;
+
+    line-height:1.9;
+
+    margin-bottom:25px;
+
+}
+
+
+body.light .policy-section{
+
+    background:#ffffff;
+
+}
+
+
+body.light .policy-section p{
+
+    color:#334155;
+
+}

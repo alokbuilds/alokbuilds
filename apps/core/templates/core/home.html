@@ -1,0 +1,246 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Home | AlokBuilds
+{% endblock %}
+
+
+{% block extra_css %}
+
+<link rel="stylesheet" href="{% static 'css/pages/home.css' %}">
+
+{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-text">
+
+        <span class="hero-tag">
+            🚀 Welcome to AlokBuilds
+        </span>
+
+        <h1>
+
+            Build
+            <span>Projects</span>
+
+            Learn
+            <span>Skills</span>
+
+            Launch
+            <span>Ideas</span>
+
+        </h1>
+
+        <h2 id="typing"></h2>
+
+        <p>
+
+            A place where you can explore projects,
+            access study resources, learn development,
+            and discover tools built for students and developers.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="/projects"
+                class="btn">
+
+                Explore Projects
+
+            </a><button onclick="showProjectModal()">View Details</button>
+
+            <a
+                href="/learn"
+                class="btn outline">
+
+                Start Learning
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-image">
+
+        <img
+            src="{% static 'images/portfolio/profile/profile.png' %}"
+            alt="AlokBuilds">
+
+    </div>
+
+</section>
+
+
+
+<!-- FEATURES -->
+
+<section class="features">
+
+    <h2>
+
+        Everything in One Place 🔥
+
+    </h2>
+
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+
+            <h3>
+                💻 Projects
+            </h3>
+
+            <p>
+                Real-world Django and web projects
+                with source code and documentation.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <h3>
+                📚 Study Materials
+            </h3>
+
+            <p>
+                Notes, PDFs, interview preparation
+                and semester resources.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <h3>
+                🚀 Portfolio
+            </h3>
+
+            <p>
+                My work, experience and journey
+                as a developer.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <h3>
+                🧰 Free Tools
+            </h3>
+
+            <p>
+                Useful tools for students
+                and developers.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- FEATURED PROJECTS -->
+
+<section id="projects">
+
+    <h2>
+
+        Featured Projects
+
+    </h2>
+
+    <div class="projects-container">
+
+        <div class="project-card">
+
+            <h3>
+                MediConnect
+            </h3>
+
+            <p>
+                Doctor Appointment Booking System
+            </p>
+            <a href="/projects" class="btn">View</a>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <h3>
+                REST API System
+            </h3>
+
+            <p>
+
+                Secure API backend architecture
+
+            </p>
+
+            <a
+                href="/projects"
+                class="btn">
+
+                View
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+    <h2>
+
+        Ready to Build Something Amazing?
+
+    </h2>
+
+    <p>
+
+        Explore resources, projects and developer content.
+
+    </p>
+
+    <a
+        href="/contact"
+        class="btn">
+
+        Get Started
+
+    </a>
+
+</section>
+
+{% endblock %}
+{% block extra_js %}
+
+<script src="{% static 'js/typing.js' %}" defer></script>
+<script src="{% static 'js/home.js' %}" defer></script>
+
+{% endblock %}

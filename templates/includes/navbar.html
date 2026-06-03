@@ -1,0 +1,122 @@
+{% load static %}
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <!-- LEFT (LOGO) -->
+    <div class="logo">
+
+        <a href="/">
+
+            <img
+                src="{% static 'images/core/logo/logo-dark.png' %}"
+                alt="AlokBuilds"
+                class="logo-img dark-logo">
+
+            <img
+                src="{% static 'images/core/logo/logo-light.png' %}"
+                alt="AlokBuilds"
+                class="logo-img light-logo">
+
+        </a>
+
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div class="menu-toggle" id="menu-toggle">
+
+        ☰
+
+    </div>
+
+    <!-- RIGHT (TOGGLE BUTTON) -->
+    <ul class="nav-links" id="nav-links">
+
+        <li>
+            <a href="/" class="{% if request.path == '/' %}active{% endif %}">
+                <i class="fa-solid fa-house"></i> Home
+            </a>
+        </li>
+
+        <li>
+            <a href="/learn" class="{% if request.path == '/learn/' %}active{% endif %}">
+                <i class="fa-solid fa-graduation-cap"></i> Learn
+            </a>
+        </li>
+
+        <li>
+            <a href="/projects" class="{% if request.path == '/projects/' %}active{% endif %}">
+                <i class="fa-solid fa-code"></i> Projects
+            </a>
+        </li>
+
+        <li>
+            <a href="/resources" class="{% if request.path == '/resources/' %}active{% endif %}">
+                <i class="fa-solid fa-book"></i> Resources
+            </a>
+        </li>
+
+        <li>
+            <a href="/tools" class="{% if request.path == '/tools/' %}active{% endif %}">
+                <i class="fa-solid fa-screwdriver-wrench"></i> Tools
+            </a>
+        </li>
+
+        <li>
+            <a href="/portfolio" class="{% if request.path == '/portfolio/' %}active{% endif %}">
+                <i class="fa-solid fa-briefcase"></i> Portfolio
+            </a>
+        </li>
+
+        <li>
+            <a href="{% url 'blog:list' %}"
+            class="{% if request.resolver_match.app_name == 'blog' %}active{% endif %}">
+                <i class="fa-solid fa-pen-to-square"></i>
+                Blog
+            </a>
+        </li>
+
+        <li class="dropdown-parent">
+            <a href="#">
+                <i class="fa-solid fa-user">&nbsp;</i>&nbsp;Account ▾
+            </a>
+
+            <ul class="dropdown">
+                <li>
+                    <a href="{% url 'accounts:login' %}">
+                        <i class="fa-solid fa-right-to-bracket"></i> Login
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{% url 'accounts:register' %}">
+                        <i class="fa-solid fa-user-plus"></i> Register
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/dashboard">
+                        <i class="fa-solid fa-gauge"></i> Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/downloads">
+                        <i class="fa-solid fa-download"></i> Downloads
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/logout">
+                        <i class="fa-solid fa-right-from-bracket"></i> Logout
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+
+    </ul>
+</nav>

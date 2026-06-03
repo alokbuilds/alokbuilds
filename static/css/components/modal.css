@@ -1,0 +1,70 @@
+/* =========================================
+                GLOBAL MODAL
+========================================= */
+
+.modal {
+
+    position: fixed;
+    inset: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,.65);
+    backdrop-filter: blur(6px);
+    z-index: 9999;
+}
+
+
+.modal.show {
+
+    display: flex;
+}
+
+
+.modal-content {
+
+    position: relative;
+    width: min(90%, 700px);
+    background: var(--bg-card);
+    color: var(--text-main);
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-lg);
+    animation: modalFade .25s ease;
+}
+
+
+.close-modal {
+
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--text-muted);
+}
+
+
+.close-modal:hover {
+
+    color: var(--primary);
+}
+
+
+@keyframes modalFade {
+
+    from {
+
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

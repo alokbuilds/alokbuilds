@@ -1,0 +1,356 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Basic SEO -->
+    <title>Alok Kumar | Backend Developer</title>
+    <meta name="description" content="Backend Developer specializing in Django, REST APIs, and scalable web applications.">
+
+    <!-- Open Graph (IMPORTANT 🔥) -->
+    <meta property="og:title" content="Alok Kumar | Backend Developer">
+    <meta property="og:description" content="I build scalable web applications using Django and REST APIs.">
+    <meta property="og:image" content="https://www.alokbuilds.in/preview.png">
+    <meta property="og:url" content="https://www.alokbuilds.in/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter (optional but good) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alok Kumar Portfolio">
+    <meta name="twitter:description" content="Backend Developer | Django Specialist">
+    <meta name="twitter:image" content="https://www.alokbuilds.in/preview.png">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/portfolio/icon/portfolio-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/portfolio/icon/portfolio-icon.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/portfolio/icon/portfolio-icon.png' %}">
+    <link rel="shortcut icon" href="{% static 'images/portfolio/icon/portfolio-icon.png' %}">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/pages/portfolio.css' %}">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <!-- LEFT (LOGO) -->
+  <div class="logo">
+    <a href="/portfolio">
+      <img src="{% static 'images/portfolio/logo/logo-dark.png' %}" class="logo-img" alt="AlokBuilds">
+    </a>
+  </div>
+
+  <!-- RIGHT (TOGGLE BUTTON) -->
+<ul class="nav-links">
+
+    <li>
+      <a href="/">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back to Main Site
+      </a>
+    </li>
+
+    <li>
+      <a href="#" class="active">
+        <i class="fa-solid fa-house"></i>
+        Home
+      </a>
+    </li>
+
+    <li>
+      <a href="#about">
+        <i class="fa-solid fa-user"></i>
+        About
+      </a>
+    </li>
+
+    <li>
+      <a href="#skills">
+        <i class="fa-solid fa-laptop-code"></i>
+        Skills
+      </a>
+    </li>
+
+    <li>
+      <a href="#projects">
+        <i class="fa-solid fa-diagram-project"></i>
+        Projects
+      </a>
+    </li>
+
+    <li>
+      <a href="#contact">
+        <i class="fa-solid fa-envelope"></i>
+        Contact
+      </a>
+    </li>
+
+    <label class="switch">
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider"></span>
+    </label>
+
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+  <!-- LEFT -->
+  <div class="hero-text">
+    <h1>Hi, I'm <span>Alok Kumar</span> 👋</h1>
+
+    <h2 id="typing"></h2>
+
+    <p>
+      Backend Developer focused on building scalable, secure and high-performance web applications.
+    </p>
+
+    <div class="status">
+      <span>🟢 Open to Internship</span>
+      <span>🟢 Available for Freelance</span>
+    </div>
+
+    <div class="hero-buttons">
+      <a href="#projects" class="btn">View Work</a>
+      <a href="#contact" class="btn outline">Hire Me</a>
+    </div>
+
+    <div class="socials">
+      <a href="https://github.com/alokbuilds">GitHub</a>
+      <a href="https://www.linkedin.com/in/alokbuilds/">LinkedIn</a>
+      <a href="{% static 'images/portfolio/docs/resume.pdf' %}" target="_blank">Resume</a>
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="hero-image">
+    <img src="{% static 'images/portfolio/profile/profile.png' %}" alt="Alok">
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-container">
+
+    <!-- LEFT SIDE (TEXT) -->
+    <div class="about-text">
+      <h2>👨‍💻 About Me</h2>
+
+      
+      <p>
+        I'm an MCA student with a strong interest in backend and full-stack development.
+        I focus on building real-world applications that solve practical problems.
+      </p>
+
+      <p>
+        My core strength lies in developing scalable backend systems using Django,
+        designing efficient APIs, and writing clean, maintainable code.
+      </p>
+
+      <ul>
+        <li>✔ Scalable Backend Systems</li>
+        <li>✔ REST API Development</li>
+        <li>✔ Clean Code Architecture</li>
+      </ul>
+    </div>
+
+    <!-- RIGHT SIDE (IMAGE / ILLUSTRATION) -->
+    <div class="about-image">
+      <img src="{% static 'images/portfolio/about/about-img-dark.webp' %}" alt="about illustration">
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Tech Stack</h2>
+
+  <div class="skills-container">
+
+    <div class="skill-card">
+      <img src="{% static 'images/portfolio/skills/python.png' %}">
+      <p>Python</p>
+    </div>
+
+    <div class="skill-card">
+      <img src="{% static 'images/portfolio/skills/django.png' %}">
+      <p>Django</p>
+    </div>
+
+    <div class="skill-card">
+      <img src="{% static 'images/portfolio/skills/mysql.png' %}">
+      <p>MySQL</p>
+    </div>
+
+    <div class="skill-card">
+      <img src="{% static 'images/portfolio/skills/postgresql.png' %}">
+      <p>PostgreSQL</p>
+    </div>
+
+    <div class="skill-card">
+      <img src="{% static 'images/portfolio/skills/html5.png' %}">
+      <p>HTML</p>
+    </div>
+
+    <div class="skill-card">
+      <img src="{% static 'images/portfolio/skills/css3.png' %}">
+      <p>CSS</p>
+    </div>
+
+    <div class="skill-card">
+      <img src="{% static 'images/portfolio/skills/javascript.png' %}">
+      <p>JavaScript</p>
+    </div>
+
+    <div class="skill-card">
+      <img src="{% static 'images/portfolio/skills/bootstrap.png' %}">
+      <p>Bootstrap</p>
+    </div>
+
+    <div class="skill-card">
+      <img src="{% static 'images/portfolio/skills/git.png' %}">
+      <p>Git</p>
+    </div>
+
+    <div class="skill-card">
+      <img src="{% static 'images/portfolio/skills/github.png' %}">
+      <p>GitHub</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Featured Projects</h2>
+
+  <div class="projects-container">
+
+    <!-- PROJECT 1 -->
+    <div class="project-card">
+      <div class="project-img">
+        <img src="{% static 'images/portfolio/projects/project1.png' %}" alt="MediConnect">
+      </div>
+
+      <div class="project-content">
+        <h3>MediConnect</h3>
+        <p>Doctor Appointment Booking System</p>
+
+        <p class="tech">⚙ Tech: Django, MySQL, Bootstrap</p>
+
+        <ul>
+          <li>✔ User Authentication</li>
+          <li>✔ Admin Dashboard</li>
+          <li>✔ Appointment Booking</li>
+        </ul>
+
+        <div class="project-buttons">
+          <a href="https://mediconnect-dabs.onrender.com/" target="_blank">Live Demo</a>
+          <a href="https://github.com/alokbuilds/MediConnect" target="_blank" class="outline">Source Code</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card">
+      <div class="project-img">
+        <img src="{% static 'images/portfolio/projects/project2-light.png' %}" alt="Portfolio" class="dark-img">
+      </div>
+
+      <div class="project-content">
+        <h3>Portfolio Website</h3>
+        <p>Personal Developer Portfolio</p>
+
+        <p class="tech">⚙ Tech: HTML, CSS, JavaScript</p>
+
+        <ul>
+          <li>✔ Responsive Design</li>
+          <li>✔ Smooth Animations</li>
+          <li>✔ Contact Form</li>
+        </ul>
+
+        <div class="project-buttons">
+          <a href="https://www.alokbuilds.in/" target="_blank">Live Demo</a>
+          <a href="https://github.com/alokbuilds/portfolio" target="_blank" class="outline">Source Code</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-card">
+      <div class="project-img">
+        <img src="{% static 'images/portfolio/projects/project3.png' %}" alt="API Project">
+      </div>
+
+      <div class="project-content">
+        <h3>REST API System</h3>
+        <p>Backend API using Django REST</p>
+
+        <p class="tech">⚙ Tech: Django, DRF</p>
+
+        <ul>
+          <li>✔ CRUD APIs</li>
+          <li>✔ Token Auth</li>
+          <li>✔ JSON Responses</li>
+        </ul>
+
+        <div class="project-buttons">
+          <a href="#">Live Demo</a>
+          <a href="#" class="outline">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY HIRE ME -->
+<section class="why">
+  <h2>Why Hire Me?</h2>
+  <div class="why-box">
+    <div>✔ Strong debugging mindset</div>
+    <div>✔ Real-world project experience</div>
+    <div>✔ Fast learner</div>
+    <div>✔ Backend focused</div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+
+  <h2>Achievements 🏆</h2>
+
+  <div class="achievement-box">
+
+    <div>🏆 Built MediConnect platform</div>
+
+    <div>🏆 Created AlokBuilds ecosystem</div>
+
+    <div>🏆 Deployed Django projects</div>
+
+    <div>🏆 Real-world backend project experience</div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Let's build something amazing 🚀</p>
+
+  <form>
+    <input type="text" name="name" placeholder="Your Name" autocomplete="off">
+    <input type="email" name="email" placeholder="Your Email" autocomplete="off">
+    <textarea name="message" placeholder="Message"></textarea>
+    <button>Send Message</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 Alokbuilds 🚀
+</footer>
+<script src="{% static 'js/portfolio.js' %}" defer></script>
+</body>
+</html>
