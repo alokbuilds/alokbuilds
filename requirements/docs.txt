@@ -1,5 +1,10 @@
--r base.txt
+asgiref==3.11.1
+Django==6.0.4
+djangorestframework==3.17.1
+python-dotenv==1.2.2
+sqlparse==0.5.5
+tzdata==2026.1
 
-Sphinx==8.3.0
-sphinx-rtd-theme==3.0.2
-myst-parser==4.0.1
+gunicorn==23.0.0
+whitenoise==6.11.0
+psycopg2-binary==2.9.10
