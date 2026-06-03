@@ -1,0 +1,50 @@
+.terms-section{
+
+    padding:80px 8%;
+
+    background:#0f172a;
+
+}
+
+
+.terms-section{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+
+.terms-section h2{
+
+    color:#06b6d4;
+
+    margin-bottom:20px;
+
+}
+
+
+.terms-section p{
+
+    color:#cbd5e1;
+
+    line-height:1.9;
+
+    margin-bottom:25px;
+
+}
+
+
+body.light .terms-section{
+
+    background:#ffffff;
+
+}
+
+
+body.light .terms-section p{
+
+    color:#334155;
+
+}

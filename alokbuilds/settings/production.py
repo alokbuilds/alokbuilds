@@ -10,8 +10,12 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
 
-    "alokbuilds.in",
+    "localhost",
+    "127.0.0.1",
 
+    "alokbuilds.in",
     "www.alokbuilds.in",
+
+    ".vercel.app",
 
 ]
