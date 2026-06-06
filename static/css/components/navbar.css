@@ -209,6 +209,37 @@ input:checked + .slider::before{
     transform:translateX(25px);
 }
 
+
+/* =========================================
+            MENU TOGGLE
+========================================= */
+
+.menu-toggle{
+
+    display:none;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    color:var(--text-main);
+}
+
+
+/* =========================================
+            MOBILE ONLY
+========================================= */
+
+@media (max-width:992px){
+
+    .menu-toggle{
+
+        display:block;
+    }
+
+}
+
+
 /* =========================================
             TABLET & MOBILE
 ========================================= */
@@ -410,32 +441,4 @@ input:checked + .slider::before{
 
         font-size:.95rem;
     }
-}
-/* =========================================
-            MENU TOGGLE
-========================================= */
-
-.menu-toggle{
-
-    display:none;
-
-    font-size:28px;
-
-    cursor:pointer;
-
-    color:var(--text-main);
-}
-
-
-/* =========================================
-            MOBILE ONLY
-========================================= */
-
-@media (max-width:992px){
-
-    .menu-toggle{
-
-        display:block;
-    }
-
 }
