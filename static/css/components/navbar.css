@@ -259,44 +259,27 @@ input:checked + .slider::before{
     .menu-toggle{
 
         display:block;
-
         font-size:24px;
-
         cursor:pointer;
     }
 
     .nav-links{
 
         display:none;
-
         position:absolute;
-
         top:100%;
-
         right:12px;
-
         left:auto;
-
         width:240px;
-
         max-height:75vh;
-
         overflow-y:auto;
-
         background:var(--bg-card);
-
         border:1px solid var(--border);
-
         border-radius:14px;
-
         box-shadow:var(--shadow-lg);
-
         padding:10px;
-
         flex-direction:column;
-
         gap:2px;
-
         z-index:9999;
     }
 
@@ -308,30 +291,20 @@ input:checked + .slider::before{
     .nav-links li{
 
         width:100%;
-
         list-style:none;
     }
 
     .nav-links li a{
 
         display:flex !important;
-
         flex-direction:row !important;
-
         align-items:center;
-
         justify-content:flex-start;
-
-        gap:6px;
-
+        gap: 4px;
         width:100%;
-
-        padding:10px 12px;
-
+        padding:1px 2px;
         font-size:13px;
-
         color:var(--text-main);
-
         border-radius:8px;
     }
 
@@ -343,9 +316,7 @@ input:checked + .slider::before{
     .nav-links li a i{
 
         width:18px;
-
         text-align:center;
-
         font-size:1rem;
     }
 
@@ -357,21 +328,13 @@ input:checked + .slider::before{
     .dropdown{
 
         position:static;
-
         display:none;
-
         width:100%;
-
         margin-top:4px;
-
         background:var(--bg-footer);
-
         border:1px solid var(--border);
-
         border-radius:10px;
-
         box-shadow:none;
-
         padding:6px;
     }
 
@@ -383,20 +346,15 @@ input:checked + .slider::before{
     .dropdown li a{
 
         display:flex;
-
         align-items:center;
-
         gap:6px;
-
         padding:8px 10px;
-
         font-size:12px;
     }
 
     .switch{
 
         margin-top:8px;
-
         align-self:center;
     }
 }
@@ -426,14 +384,12 @@ input:checked + .slider::before{
     .nav-links{
 
         width:220px;
-
         right:8px;
     }
 
     .nav-links li a{
 
         padding:8px 10px;
-
         font-size:12px;
     }
 
