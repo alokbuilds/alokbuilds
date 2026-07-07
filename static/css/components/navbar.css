@@ -561,6 +561,11 @@ SMALL MOBILE
     .nav-links li a{
         padding:7px 8px;
         font-size:12px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
     }
 
     .nav-links li a i{
