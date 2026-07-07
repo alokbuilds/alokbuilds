@@ -256,7 +256,7 @@ TABLET & MOBILE
 
     .nav-links li a{
         display:flex;
-        flex-direction:row;
+        flex-direction:row !important;
         align-items:center;
         justify-content:flex-start;
         gap:6px;
