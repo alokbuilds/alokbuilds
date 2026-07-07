@@ -246,6 +246,7 @@ TABLET & MOBILE
 
     .nav-links.active{
         display:flex;
+        flex-direction:column;
     }
 
     .nav-links li{
