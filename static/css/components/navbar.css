@@ -240,7 +240,7 @@ TABLET & MOBILE
         box-shadow:var(--shadow-lg);
         padding:8px;
         flex-direction:column;
-        gap:0;
+        gap:4px !important;
         z-index:9999;
     }
 
