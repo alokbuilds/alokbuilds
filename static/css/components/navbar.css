@@ -250,6 +250,8 @@ TABLET & MOBILE
     }
 
     .nav-links li{
+        display:flex !important;
+        flex-direction:row !important;
         width:100%;
         list-style:none;
     }
