@@ -215,51 +215,14 @@ TABLET & MOBILE
 
 @media(max-width:992px){
 
-    .navbar{
-        padding:10px 20px;
-    }
-
-    .logo-img{
-        width:60px;
-    }
-
-    .menu-toggle{
-        display:block;
-        font-size:24px;
-    }
-
-    .nav-links{
-        display:none;
-        position:absolute;
-        top:100%;
-        right:10px;
-        width:240px;
-        background:var(--bg-card);
-        border:1px solid var(--border);
-        border-radius:12px;
-        box-shadow:var(--shadow-lg);
-        padding:8px;
-        flex-direction:column;
-        gap:0;
-        z-index:9999;
-    }
-
-    .nav-links.active{
-        display:flex;
-        flex-direction:column;
-    }
-
-    .nav-links li{
-        width:100%;
-        list-style:none;
-    }
-
     .nav-links li a{
         display:flex !important;
         flex-direction:row !important;
-        align-items:center;
-        justify-content:flex-start;
-        gap:6px;
+        flex-wrap:nowrap !important;
+        align-items:center !important;
+        justify-content:flex-start !important;
+        white-space:nowrap !important;
+        gap:6px !important;
         width:100%;
         padding:8px 10px;
         font-size:13px;
@@ -267,58 +230,13 @@ TABLET & MOBILE
         border-radius:8px;
     }
 
-    .nav-links li a:hover{
-        background:var(--bg-footer);
-        background:transparent;
-    }
-
-    .nav-links li a:active{
-        background:var(--bg-footer);
-        color:var(--primary);
-    }
-
-    .dropdown li a:active{
-        background:var(--bg-footer);
-        color:var(--primary);
-    }
-
     .nav-links li a i{
-        width:18px;
-        text-align:center;
-        font-size:1rem;
-    }
-
-    .dropdown-parent{
-        width:100%;
-    }
-
-    .dropdown{
-        position:static;
-        display:none;
-        width:100%;
-        margin-top:4px;
-        padding:6px;
-        background:var(--bg-footer);
-        border:1px solid var(--border);
-        border-radius:8px;
-        box-shadow:none;
-    }
-
-    .dropdown-parent:hover .dropdown{
-        display:block;
-    }
-
-    .dropdown li a{
-        display:flex;
+        display:inline-flex !important;
         align-items:center;
-        gap:6px;
-        padding:6px 8px;
-        font-size:12px;
-    }
-
-    .switch{
-        margin-top:6px;
-        align-self:center;
+        justify-content:center;
+        width:18px;
+        min-width:18px;
+        font-size:1rem;
     }
 }
 
@@ -329,34 +247,15 @@ SMALL MOBILE
 
 @media(max-width:576px){
 
-    .navbar{
-        padding:8px 15px;
-    }
-
-    .logo-img{
-        width:52px;
-    }
-
-    .menu-toggle{
-        font-size:22px;
-    }
-
-    .nav-links{
-        width:220px;
-        right:8px;
-    }
-
     .nav-links li a{
+        display:flex !important;
+        flex-direction:row !important;
+        flex-wrap:nowrap !important;
+        align-items:center !important;
+        justify-content:flex-start !important;
+        white-space:nowrap !important;
+        gap:6px !important;
         padding:7px 8px;
         font-size:12px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 6px;
-    }
-
-    .nav-links li a i{
-        font-size:.95rem;
     }
 }
