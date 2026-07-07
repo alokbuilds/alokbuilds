@@ -81,7 +81,7 @@ body.dark .light-logo{
     display: flex;
     font-size: 12px;   /* text size */
     color: var(--text-muted); /* text color */
-    flex-direction: column;
+    flex-direction:row;
     align-items: center;
     justify-content: center;
     gap: 4px; 
