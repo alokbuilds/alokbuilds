@@ -59,15 +59,22 @@
     flex:1;
     display:flex;
     justify-content:center;
+    align-items:center;
 }
-
 .hero-image img{
     width:100%;
-    max-width:420px;
-    border-radius:50%;
-    border:3px solid var(--primary);
-    box-shadow:0 0 25px rgba(6,182,212,.25);
-    animation:float 4s ease-in-out infinite;
+    max-width:520px;
+    height:auto;
+    object-fit:contain;
+}
+.hero-image-dark{
+    display:none;
+}
+body.dark .hero-image-lite{
+    display:none;
+}
+body.dark .hero-image-dark{
+    display:block;
 }
 
 /* =========================================
@@ -228,37 +235,144 @@
                 RESPONSIVE
 ========================================= */
 
-@media(max-width:992px){
+@media (max-width: 992px){
 
     .hero{
-        flex-direction:column;
-        text-align:center;
+
+        flex-direction: column-reverse;
+
+        text-align: center;
+
+        gap: 40px;
+
+        padding: 80px 6%;
+    }
+
+    .hero-text{
+
+        width: 100%;
+    }
+
+    .hero-image{
+        width:100%;
+    }
+
+    .hero-image img{
+        max-width:420px;
     }
 
     .hero-buttons{
-        justify-content:center;
+
+        justify-content: center;
     }
 
     .hero p{
-        margin-inline:auto;
+
+        margin-inline: auto;
     }
 
 }
 
-@media(max-width:576px){
+
+@media (max-width: 768px){
 
     .hero{
-        padding:60px 6%;
+
+        min-height: auto;
+
+        padding: 60px 5%;
+    }
+
+    .hero h1{
+
+        font-size: 2.5rem;
+    }
+
+    .hero h2{
+
+        font-size: 1.3rem;
+    }
+
+    .hero p{
+
+        font-size: .95rem;
+
+        line-height: 1.8;
+    }
+
+    .hero-image img{
+
+        max-width: 260px;
+    }
+
+    .feature-grid,
+    .projects-container{
+
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 576px){
+
+    .hero{
+
+        padding: 50px 20px;
+    }
+
+    .hero-tag{
+
+        font-size: .8rem;
+
+        padding: 8px 16px;
+    }
+
+    .hero h1{
+
+        font-size: 2rem;
+    }
+
+    .hero h2{
+
+        font-size: 1.1rem;
+
+        min-height: auto;
+    }
+
+    .hero p{
+
+        font-size: .9rem;
+    }
+
+    .hero-image img{
+        max-width:320px;
+        border-width: 2px;
+    }
+
+    .hero-buttons{
+
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .hero-buttons .btn{
+
+        width: 100%;
     }
 
     .features,
     #projects,
     .cta{
-        padding:80px 6%;
+
+        padding: 60px 20px;
     }
 
-    .hero-buttons{
-        flex-direction:column;
+    .feature-card,
+    .project-card{
+
+        padding: 24px;
     }
 
 }

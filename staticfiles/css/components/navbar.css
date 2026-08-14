@@ -8,18 +8,13 @@
     left:0;
     width:100%;
     z-index:9999;
-
     display:flex;
     justify-content:space-between;
     align-items:center;
-
     padding:6px 40px 0px;
-
     background:rgba(255,255,255,.9);
     backdrop-filter:blur(12px);
-
     border-bottom:1px solid var(--border);
-
     transition:var(--transition);
 }
 
@@ -84,20 +79,18 @@ body.dark .light-logo{
 
 .nav-links li a {
     display: flex;
+    font-size: 12px;   /* text size */
+    color: var(--text-muted); /* text color */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 6px;
+    gap: 4px; 
 }
 
 .nav-links li a i {
     font-size: 1.2rem;   /* icon size */
 }
 
-.nav-links li a {
-    font-size: 12px;   /* text size */
-    color: var(--text-muted); /* text color */
-}
 
 .nav-links a:hover,
 .nav-links a.active{
@@ -132,19 +125,12 @@ body.dark .light-logo{
     position:absolute;
     top:100%;
     right:0;
-
     min-width:220px;
-
     display:none;
-
     background:var(--bg-card);
-
     border:1px solid var(--border);
-
     border-radius:12px;
-
     box-shadow:var(--shadow-lg);
-
     padding:10px;
 }
 
@@ -211,8 +197,9 @@ input:checked + .slider::before{
     transform:translateX(25px);
 }
 
+
 /* =========================================
-                MOBILE
+MENU TOGGLE
 ========================================= */
 
 .menu-toggle{
@@ -222,38 +209,158 @@ input:checked + .slider::before{
     color:var(--text-main);
 }
 
+/* =========================================
+TABLET & MOBILE
+========================================= */
+
 @media(max-width:992px){
+
+    .navbar{
+        padding:10px 20px;
+    }
+
+    .logo-img{
+        width:60px;
+    }
 
     .menu-toggle{
         display:block;
+        font-size:24px;
     }
 
     .nav-links{
         display:none;
-
         position:absolute;
         top:100%;
-        left:0;
-
-        width:100%;
-
-        flex-direction:column;
-        align-items:flex-start;
-
+        right:10px;
+        width:240px;
         background:var(--bg-card);
-
-        border-top:1px solid var(--border);
-
-        padding:20px;
+        border:1px solid var(--border);
+        border-radius:12px;
+        box-shadow:var(--shadow-lg);
+        padding:8px;
+        flex-direction:column;
+        gap:0;
+        z-index:9999;
     }
 
     .nav-links.active{
         display:flex;
+        flex-direction:column;
+    }
+
+    .nav-links li{
+        width:100%;
+        list-style:none;
+    }
+
+    .nav-links li a{
+        display:flex;
+        flex-direction:row !important;
+        align-items:center;
+        justify-content:flex-start;
+        gap:6px;
+        width:100%;
+        padding:8px 10px;
+        font-size:13px;
+        color:var(--text-main);
+        border-radius:8px;
+    }
+
+    .nav-links li a i{
+        width:18px;
+        min-width:18px;
+        text-align:center;
+        font-size:1rem;
+    }
+
+    .nav-links li a:hover{
+        background:transparent;
+    }
+
+    .nav-links li a:active{
+        background:var(--bg-footer);
+        color:var(--primary);
+    }
+
+    .dropdown-parent{
+        width:100%;
     }
 
     .dropdown{
         position:static;
+        display:none;
         width:100%;
-        margin-top:10px;
+        margin-top:4px;
+        padding:6px;
+        background:var(--bg-footer);
+        border:1px solid var(--border);
+        border-radius:8px;
+        box-shadow:none;
+    }
+
+    .dropdown-parent.active .dropdown{
+        display:block;
+    }
+
+    .dropdown li a{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        gap:6px;
+        padding:6px 8px;
+        font-size:12px;
+    }
+
+    .dropdown li a:active{
+        background:var(--bg-footer);
+        color:var(--primary);
+    }
+
+    .switch{
+        margin-top:6px;
+        align-self:center;
+    }
+}
+
+
+/* =========================================
+SMALL MOBILE
+========================================= */
+
+@media(max-width:576px){
+
+    .navbar{
+        padding:8px 15px;
+    }
+
+    .logo-img{
+        width:52px;
+    }
+
+    .menu-toggle{
+        font-size:22px;
+    }
+
+    .nav-links{
+        width:220px;
+        right:8px;
+    }
+
+    .nav-links li a{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content:flex-start;
+        gap:6px;
+        padding:7px 8px;
+        font-size:12px;
+    }
+
+    .nav-links li a i{
+        width:18px;
+        min-width:18px;
+        font-size:.95rem;
+        text-align:center;
     }
 }
