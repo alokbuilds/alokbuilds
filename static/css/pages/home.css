@@ -59,15 +59,22 @@
     flex:1;
     display:flex;
     justify-content:center;
+    align-items:center;
 }
-
 .hero-image img{
     width:100%;
-    max-width:420px;
-    border-radius:50%;
-    border:3px solid var(--primary);
-    box-shadow:0 0 25px rgba(6,182,212,.25);
-    animation:float 4s ease-in-out infinite;
+    max-width:520px;
+    height:auto;
+    object-fit:contain;
+}
+.hero-image-dark{
+    display:none;
+}
+body.dark .hero-image-lite{
+    display:none;
+}
+body.dark .hero-image-dark{
+    display:block;
 }
 
 /* =========================================
@@ -247,13 +254,11 @@
     }
 
     .hero-image{
-
-        width: 100%;
+        width:100%;
     }
 
     .hero-image img{
-
-        max-width: 320px;
+        max-width:420px;
     }
 
     .hero-buttons{
@@ -341,9 +346,7 @@
     }
 
     .hero-image img{
-
-        max-width: 220px;
-
+        max-width:320px;
         border-width: 2px;
     }
 
