@@ -49,13 +49,13 @@ INSTALLED_APPS = [
 
     # LOCAL APPS
 
-    'apps.api',
-    'apps.core',
     'apps.accounts',
+    'apps.api',
+    'apps.blog',
+    'apps.core',
     'apps.projects',
     'apps.portfolio',
-    'apps.blog',
-    'apps.courses',
+    'apps.courses','apps.resources',
 
 ]
 
