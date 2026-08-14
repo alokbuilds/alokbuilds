@@ -20,15 +20,15 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('', include('apps.core.urls')),
-    path('portfolio/', include('apps.portfolio.urls')),
-    path('projects/', include('apps.projects.urls')),
-    path('blog/', include('apps.blog.urls')),
     path('accounts/', include('apps.accounts.urls')),
+    path('api/', include('apps.api.urls')),
+    path('blog/', include('apps.blog.urls')),
+    path('', include('apps.core.urls')),
     path('learn/', include('apps.courses.urls')),
-    path('resources/', include('apps.resources.urls')),
-    path('tools/', include('apps.tools.urls')),
     path('dashboard/', include('apps.dashboard.urls')),
     path('payments/', include('apps.payments.urls')),
-    path('api/', include('apps.api.urls')),
+    path('portfolio/', include('apps.portfolio.urls')),
+    path('projects/', include('apps.projects.urls')),
+    path('resources/', include('apps.resources.urls')),
+    path('tools/', include('apps.tools.urls')),
 ]
